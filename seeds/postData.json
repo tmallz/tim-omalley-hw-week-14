@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Appointments",
+        "body": "Haircut 2:15 pm. Class 6:30 pm",
+        "user_id": 1
+    },
+    {
+        "title": "Thoughts",
+        "body": "I wonder if anyone will read this post...",
+        "user_id": 1
+    },
+    {
+        "title": "Apartment Hunting",
+        "body": "I have been looking for a new place to live recently. It's itme consuming but will be worth it in the end. Anyone have suggestions?",
+        "user_id": 2
+    },
+    {
+        "title": "Dog",
+        "body": "My dog's name is Atticus Finch and I have never read to kill a mokingbird.",
+        "user_id": 3
+    },
+    {
+        "title": "Cat",
+        "body": "I think I'd also like to own a cat though.",
+        "user_id": 3
+    }
+]
