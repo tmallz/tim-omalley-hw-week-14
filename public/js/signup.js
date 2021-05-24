@@ -20,6 +20,10 @@ const signupFormHandler  = async (event) => {
     }
 };
 
-document
-  .querySelector('.signup-container')
-  .addEventListener('submit', signupFormHandler); 
+const loginPageLoader =  () =>{
+    document.location.replace('/login');
+  }
+
+document.querySelector('#signUpBtn').addEventListener('submit', signupFormHandler); 
+
+document.querySelector('#loginPageBtn').addEventListener('click', loginPageLoader);
