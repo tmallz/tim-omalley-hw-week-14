@@ -7,6 +7,12 @@ router.get('/', withAuth, async (req, res) => {
     });
 });
 
+router.get('/dashboard', withAuth, async (req, res) => {
+  res.render('dashboard', {
+    loggedIn: true
+  });
+});
+
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
