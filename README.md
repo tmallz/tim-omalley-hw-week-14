@@ -18,10 +18,6 @@ This application is a tech blog that allows users to view all previous posts. A 
   - The user can comment on that post.
 - The user can log out.
 
-## Screenshot
-
-![image](https://user-images.githubusercontent.com/61262154/119705488-6a7ff880-be1e-11eb-9b69-8b846c7def05.png)
-
 ## Technolgies Used
 
 - Html
@@ -36,6 +32,14 @@ This application is a tech blog that allows users to view all previous posts. A 
 - sequelize
 - express-session
 - path
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/61262154/119705488-6a7ff880-be1e-11eb-9b69-8b846c7def05.png)
+
+## Demo 
+
+https://user-images.githubusercontent.com/61262154/119707120-6b198e80-be20-11eb-9146-356909a4e322.mp4
 
 ## App Usage
 
