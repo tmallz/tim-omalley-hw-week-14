@@ -6,11 +6,19 @@ router.get('/', (req, res) => {
     Post.findAll({
       include: [User],
     }).then((allPosts) => {
-      const posts = allPosts.map((post) => post.get({plain: true}))
-      res.render('homepage', {
-        posts,
-        loggedIn: true
-      });
+      const posts = allPosts.map((post) => post.get({plain: true}));
+      if(req.session.logged_in){
+        res.render('homepage', {
+          posts,
+          loggedIn: true
+        });
+      } else{
+        res.render('homepage', {
+          posts,
+          loggedIn: false
+        });
+      }
+
     }) 
     .catch((err) => {res.status(500).json(err)});
 });
