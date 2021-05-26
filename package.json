@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
-    "start": "node server.js"
+    "build": "postcss public/css/tailwind.css -o public/build/tailwind.css",
+    "start": "node server.js",
+    "seed": "node seeds/seeds.js"
   },
   "repository": {
     "type": "git",
