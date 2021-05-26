@@ -1,5 +1,4 @@
 const loginFormHandler = async (event) => {
-  console.log('here');
   event.preventDefault();
 
   const username = document.querySelector('#username').value.trim();
@@ -26,7 +25,6 @@ const signUpPageLoader =  () =>{
 
 
 document.querySelector('#loginBtn').addEventListener('click', loginFormHandler);
-//document.getElementById('loginBtn').addEventListener('submit', loginFormHandler);
 
 document.querySelector('#signUpPageBtn').addEventListener('click', signUpPageLoader);
 

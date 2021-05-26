@@ -36,13 +36,6 @@ router.get('/post/:id', withAuth, (req, res) => {
   .catch((err) => {res.status(500).json(err)});
 });
 
-
-router.get('/dashboard', withAuth, async (req, res) => {
-  res.render('dashboard', {
-    loggedIn: true
-  });
-});
-
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
