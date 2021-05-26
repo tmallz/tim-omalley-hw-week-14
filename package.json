@@ -1,7 +1,10 @@
 {
   "name": "tim-omalley-hw-week-14",
   "version": "1.0.0",
-  "description": "",
+  "description": "tech blog",
+  "engines": {
+    "node": "12.11.1"
+  },
   "main": "server.js",
   "scripts": {
     "build": "postcss public/css/tailwind.css -o public/build/tailwind.css",
