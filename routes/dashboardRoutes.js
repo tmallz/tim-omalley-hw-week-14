@@ -24,4 +24,18 @@ router.get('/create', withAuth, (req, res) => {
     res.render('newPost');
 })
 
+router.get('/editDeletePost/:id', withAuth, (req, res) => {
+    Post.findByPk(req.params.id,{})
+    .then((currentPost) => {
+        if(!currentPost){
+            res.status(404).json({message: 'Post not found'});
+            return;
+        }
+        const post = currentPost.get({plain: true});
+
+        res.render('editDeletePost', {post, loggedIn: true});
+    })
+    .catch((err) => {res.status(500).json(err)});
+})
+
 module.exports = router;

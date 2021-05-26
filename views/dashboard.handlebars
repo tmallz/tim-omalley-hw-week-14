@@ -4,7 +4,7 @@
     <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full px-3 mb-6 md:mb-0 bg-gray-800 text-white">
-           <a href="post/{{id}}">{{title}}</a>
+           <a href="/dashboard/editDeletePost/{{id}}">{{title}}</a>
             <span id="postDate" class = "origin-top-right absolute right-20 text-white">{{user.username}} {{format_date createdAt}}</span>
         </div>
     </div>
@@ -19,16 +19,10 @@
 {{/if}}
 
 <div class="flex items-center justify-center my-5">
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="newPostBtn">
+  <button class="bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded" id="newPostBtn">
     New Post
   </button>
 </div>
 
 
-<script>
-  const newPostHandler = () => {
-    document.location.replace('/dashboard/create')
-  }
-
-  document.querySelector('#newPostBtn').addEventListener('click', newPostHandler);
-</script>
+<script src="/js/dashboard.js"></script>
