@@ -3,7 +3,6 @@ const withAuth = require('../utils/auth');
 const {Post, User, Comment} = require('../models');
 
 router.get('/', withAuth, (req, res) => {
-    console.log('made it in the route');
     Post.findAll({
         include: [User, {
             model: Comment,
