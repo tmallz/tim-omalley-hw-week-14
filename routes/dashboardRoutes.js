@@ -21,7 +21,7 @@ router.get('/', withAuth, (req, res) => {
 })
 
 router.get('/create', withAuth, (req, res) => {
-    res.render('newPost');
+    res.render('newPost', {loggedIn: true});
 })
 
 router.get('/editDeletePost/:id', withAuth, (req, res) => {
@@ -36,6 +36,7 @@ router.get('/editDeletePost/:id', withAuth, (req, res) => {
         res.render('editDeletePost', {post, loggedIn: true});
     })
     .catch((err) => {res.status(500).json(err)});
-})
+});
+
 
 module.exports = router;

@@ -20,10 +20,27 @@ router.delete('/:id', withAuth, (req, res) => {
     .then((delPost) => {
         if(!req.params.id){
             res.status(404).json({message: 'Post not found'});
+            return;
         }
         res.json(delPost);
     })
     .catch((err) => res.status(500).json(err));
-})
+});
+
+router.put('/:id', withAuth, (req, res) => {
+    Post.update(req.body, {
+        where: {
+            id: req.params.id
+        }
+    })
+    .then((updatePost) => {
+        if(!req.params.id){
+            res.status(404).json({message: 'Post not found'});
+            return;
+        }
+        res.json(updatePost)
+    })
+    .catch((err) => res.status(400).json(err))
+});
 
 module.exports = router;
