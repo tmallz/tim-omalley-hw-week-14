@@ -13,4 +13,17 @@ router.post('/', withAuth, (req, res) => {
     .catch((err) => {res.status(500).json(err)})
 });
 
+router.delete('/:id', withAuth, (req, res) => {
+    Post.destroy({
+        where: {id: req.params.id,},
+    })
+    .then((delPost) => {
+        if(!req.params.id){
+            res.status(404).json({message: 'Post not found'});
+        }
+        res.json(delPost);
+    })
+    .catch((err) => res.status(500).json(err));
+})
+
 module.exports = router;
