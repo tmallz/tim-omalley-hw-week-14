@@ -5,6 +5,7 @@ const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const helpers = require('./utils/helpers')
+require('dotenv').config();
 
 // import sequelize connection
 
