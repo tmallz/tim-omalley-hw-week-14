@@ -49,6 +49,10 @@ https://user-images.githubusercontent.com/61262154/119707120-6b198e80-be20-11eb-
   - Run 'npm i' in the command line to install the all the npm packages
   - Run 'npm run build' in the command line to build the tailwind css style sheet
 
+## Known Bugs
+
+- Deployed from the heroku CLI via bash and deleted the app. gitHub still lists this build as an active envrionement even though the link leads to a 404 error site. 
+
 ## MIT License
 
 Copyright (c) 2021 Tim O'Malley
