@@ -3,7 +3,7 @@
 This application is a tech blog that allows users to view all previous posts. A user can log in to interact more with the blog. After logging in the user can comment on posts, make thier own posts, and edit/delete posts that they have made.
 
 - gitHub repo: https://github.com/tmallz/tim-omalley-hw-week-14
-- deployed app: 
+- deployed app: https://tech-blog-tlo.herokuapp.com/
 
 ## Functionality
 
